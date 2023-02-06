@@ -75,14 +75,13 @@ h2{
     margin-top: 3vw;
 
 }
-.sections{
-    display:hidden;
-}
 .square-transition {
     opacity: 1;
     transform: none;
 }
-
+.sections{
+    visibility: hidden;
+}
 @keyframes wipe-enter {
 	0% {
         opacity: 0;
@@ -107,9 +106,9 @@ h2{
       transform: translate(0, 0);
     }
   }
-
 @media (prefers-reduced-motion: no-preference) {
     .square-animation {
+        visibility: visible;
       animation: slidein 1.5s 1;
     }
   }
@@ -451,6 +450,7 @@ th{
     }
     .intro ul{
         font-size: 3vw;
+        padding-inline-start: 6vw;
         }
     .white-intro{
         padding-left: 3vw;
